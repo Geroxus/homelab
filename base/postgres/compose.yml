@@ -1,7 +1,10 @@
+include:
+  - ../../common.yml
+
 services:
   database:
     image: postgres:18.4
-    container_name: *db-name
+    container_name: database
     restart: unless-stopped
     networks:
       - local
