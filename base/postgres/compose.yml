@@ -1,0 +1,15 @@
+services:
+  database:
+    image: postgres:18.4
+    container_name: *db-name
+    restart: unless-stopped
+    networks:
+      - local
+    ports:
+      - 5432:5432
+    volumes:
+      - ./data/:/var/lib/postgresql/
+    environment:
+      POSTGRES_PASSWORD: *db-password
+      POSTGRES_USER: root
+

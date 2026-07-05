@@ -1,0 +1,3 @@
+x-database:
+  db-name: &db-name "database"
+  db-password: &db-password ${DB_PASSWORD}
