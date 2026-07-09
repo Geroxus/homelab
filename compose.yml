@@ -14,3 +14,4 @@ include:
 networks:
   edge:
   db:
+  local:

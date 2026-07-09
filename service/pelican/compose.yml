@@ -21,14 +21,13 @@ services:
     container_name: panel
     restart: unless-stopped
     networks:
-      - pterodactyl
       - local
     volumes:
-      - data/panel/var/:/pelican-data/
-      - data/panel/logs/:/var/www/html/storage/logs/
+      - ./data/panel/var/:/pelican-data/
+      - ./data/panel/logs/:/var/www/html/storage/logs/
     environment:
       <<: [*panel-environment, *mail-environment]
       XDG_DATA_HOME: "/pelican-data"
       BEHIND_PROXY: "true"
-      DB_PASSWORD: *db-password
+      DB_PASSWORD: ${DB_PASSWORD_PELICAN_PANEL}
 

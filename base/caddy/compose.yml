@@ -10,9 +10,9 @@ services:
       - 443:443
       - 443:443/udp
     volumes:
-      - data/:/data/
-      - config/services/:/etc/caddy/
-      - config/config/:/config/
+      - ./data/:/data/
+      - ./config/services/:/etc/caddy/
+      - ./config/config/:/config/
     networks:
       - edge
 
