@@ -1,7 +1,6 @@
 # root compose file. This will be started via docker compose up -d. It then starts everything else aswell
 
 include:
-  - common.yml
   # base services
   - base/caddy/compose.yml
   - base/postgres/compose.yml
