@@ -1,10 +1,7 @@
-include:
-  - ../../common.yml
-
 services:
   database:
     image: postgres:18.4
-    container_name: database
+    container_name: ${DB_NAME}
     restart: unless-stopped
     networks:
       - local
@@ -13,6 +10,6 @@ services:
     volumes:
       - ./data/:/var/lib/postgresql/
     environment:
-      POSTGRES_PASSWORD: *db-password
+      POSTGRES_PASSWORD: ${DB_PASSWORD_ROOT}
       POSTGRES_USER: root
 
