@@ -1,2 +1,7 @@
 **/.env
 **/data/
+
+# ignore files I use for backups
+*.tar.*
+*.dump
+
