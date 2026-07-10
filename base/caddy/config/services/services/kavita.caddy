@@ -1,0 +1,4 @@
+books.geroxus.net {
+	reverse_proxy kavita:5000
+}
+

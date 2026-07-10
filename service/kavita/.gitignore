@@ -1,0 +1,3 @@
+# ignore config since kavita uses it as its directory for work time data
+config/**
+
