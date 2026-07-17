@@ -31,4 +31,6 @@ services:
       XDG_DATA_HOME: "/pelican-data"
       BEHIND_PROXY: "true"
       DB_PASSWORD: ${DB_PASSWORD_PELICAN_PANEL}
+    depends_on:
+      - database
 
