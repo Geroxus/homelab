@@ -12,5 +12,6 @@ services:
         limits:
           memory: 256M
     networks:
-      local:
+      db:
+      edge:
 
