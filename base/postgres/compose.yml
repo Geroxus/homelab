@@ -1,6 +1,6 @@
 services:
   database:
-    image: postgres:18.4
+    build: ./
     container_name: ${DB_NAME}
     restart: unless-stopped
     healthcheck:
