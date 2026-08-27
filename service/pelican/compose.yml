@@ -33,6 +33,6 @@ services:
       DB_PASSWORD: ${DB_PASSWORD_PELICAN_PANEL}
     depends_on:
       - database
-    profile:
+    profiles:
       - panel
 
