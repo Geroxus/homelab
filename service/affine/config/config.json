@@ -1,0 +1,13 @@
+{
+  "$schema": "https://github.com/toeverything/affine/releases/latest/download/config.schema.json",
+  "server": {
+    "name": "Notes powered by AFFiNE",
+    "externalUrl": "https://notes.geroxus.net"
+  },
+  "copilot": {
+    "enabled": false,
+    "byok": {
+      "enabled": false
+    }
+  }
+}
