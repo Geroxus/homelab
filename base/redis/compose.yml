@@ -15,4 +15,6 @@ services:
       - internal
     profiles:
       - base
+      - services
+      - affine
 
