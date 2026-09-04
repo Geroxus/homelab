@@ -1,7 +1,7 @@
 services:
   affine:
     image: ghcr.io/toeverything/affine:stable
-    conatiner_name: affine
+    container_name: affine
     restart: unless-stopped
     depends_on:
       redis:
@@ -22,7 +22,7 @@ services:
       
   affine_migration:
     image: ghcr.io/toeverything/affine:stable
-    conatiner_name: affine_migration_job
+    container_name: affine_migration_job
     restart: unless-stopped
     depends_on:
       redis:
