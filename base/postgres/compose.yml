@@ -18,4 +18,5 @@ services:
     environment:
       POSTGRES_PASSWORD: ${DB_PASSWORD_ROOT}
       POSTGRES_USER: root
+    env_file: ../../.env
 
