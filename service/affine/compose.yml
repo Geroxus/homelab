@@ -37,6 +37,7 @@ services:
     volumes:
       - ./data/storage:/root/.affine/storage
       - ./config:/root/.affine/config
+    command: ['sh', '-c', 'node ./scripts/self-host-predeploy.js']
     environment:
       - REDIS_SERVER_HOST=redis
       - DATABASE_URL=postgresql://${DB_USERNAME_AFFINE}:${DB_PASSWORD_AFFINE}@${DB_NAME}:5432/affine
