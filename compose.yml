@@ -10,6 +10,7 @@ include:
   - service/kavita/compose.yml
   - service/commafeed/compose.yml
   - service/pelican/compose.yml
+  - service/affine/compose.yml
 
 networks:
   edge:
