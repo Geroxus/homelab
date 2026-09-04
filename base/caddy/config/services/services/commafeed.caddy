@@ -1,0 +1,4 @@
+feed.geroxus.net {
+	reverse_proxy commafeed:8082
+}
+
