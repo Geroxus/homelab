@@ -11,11 +11,11 @@ services:
       affine_migration:
         condition: service_completed_successfully
     volumes:
-      - ${AFFINE_UPLOAD_LOCATION}:/root/.affine/storage
-      - ${AFFINE_CONFIG_LOCATION}:/root/.affine/config
+      - ./data/storage:/root/.affine/storage
+      - ./config:/root/.affine/config
     environment:
       - REDIS_SERVER_HOST=redis
-      - DATABASE_URL=postgresql://${DB_USERNAME_AFFINE}:${DB_USERNAME_PASSWORD}@${DB_NAME}:5432/affine
+      - DATABASE_URL=postgresql://${DB_USERNAME_AFFINE}:${DB_PASSWORD_AFFINE}@${DB_NAME}:5432/affine
       - AFFINE_INDEXER_ENABLED=false
     profiles:
       - affine
@@ -30,11 +30,11 @@ services:
       database:
         condition: service_healthy
     volumes:
-      - ${AFFINE_UPLOAD_LOCATION}:/root/.affine/storage
-      - ${AFFINE_CONFIG_LOCATION}:/root/.affine/config
+      - ./data/storage:/root/.affine/storage
+      - ./config:/root/.affine/config
     environment:
       - REDIS_SERVER_HOST=redis
-      - DATABASE_URL=postgresql://${DB_USERNAME_AFFINE}:${DB_USERNAME_PASSWORD}@${DB_NAME}:5432/affine
+      - DATABASE_URL=postgresql://${DB_USERNAME_AFFINE}:${DB_PASSWORD_AFFINE}@${DB_NAME}:5432/affine
       - AFFINE_INDEXER_ENABLED=false
     profiles:
       - affine
