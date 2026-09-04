@@ -17,6 +17,10 @@ services:
       - REDIS_SERVER_HOST=redis
       - DATABASE_URL=postgresql://${DB_USERNAME_AFFINE}:${DB_PASSWORD_AFFINE}@${DB_NAME}:5432/affine
       - AFFINE_INDEXER_ENABLED=false
+    networks:
+      internal:
+      db:
+      edge:
     profiles:
       - affine
       - services
@@ -37,6 +41,9 @@ services:
       - REDIS_SERVER_HOST=redis
       - DATABASE_URL=postgresql://${DB_USERNAME_AFFINE}:${DB_PASSWORD_AFFINE}@${DB_NAME}:5432/affine
       - AFFINE_INDEXER_ENABLED=false
+    networks:
+      internal:
+      db:
     profiles:
       - affine
       - services

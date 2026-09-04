@@ -12,7 +12,7 @@ services:
       # exposed s.t. I can inspect this via tools
       # - 6379:6379
     networks:
-      - edge
+      - internal
     profiles:
       - base
 

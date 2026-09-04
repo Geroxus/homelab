@@ -11,7 +11,7 @@ services:
       - ./data/:/data/
       - ./config/:/config/
     networks: 
-      - edge
+      edge:
     profiles:
       - kavita
       - services

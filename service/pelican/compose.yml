@@ -23,6 +23,7 @@ services:
     networks:
       db:
       edge:
+      internal:
     volumes:
       - ./data/panel/var/:/pelican-data/
       - ./data/panel/logs/:/var/www/html/storage/logs/
