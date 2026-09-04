@@ -28,7 +28,6 @@ services:
   affine_migration:
     image: ghcr.io/toeverything/affine:stable
     container_name: affine_migration_job
-    restart: unless-stopped
     depends_on:
       redis:
         condition: service_healthy
