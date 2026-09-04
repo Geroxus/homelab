@@ -8,7 +8,7 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-    ports:
+    # ports:
       # exposed s.t. I can inspect this via tools
       # - 6379:6379
     networks:
