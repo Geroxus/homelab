@@ -19,6 +19,7 @@ services:
       - AFFINE_INDEXER_ENABLED=false
     profiles:
       - affine
+      - services
       
   affine_migration:
     image: ghcr.io/toeverything/affine:stable
@@ -38,3 +39,4 @@ services:
       - AFFINE_INDEXER_ENABLED=false
     profiles:
       - affine
+      - services

@@ -16,4 +16,7 @@ services:
     networks:
       db:
       edge:
+    profiles:
+      - commafeed
+      - services
 

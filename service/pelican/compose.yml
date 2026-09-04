@@ -35,4 +35,5 @@ services:
       - database
     profiles:
       - panel
+      - services
 

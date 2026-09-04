@@ -13,4 +13,6 @@ services:
       - 6379:6379
     networks:
       - edge
+    profiles:
+      - base
 

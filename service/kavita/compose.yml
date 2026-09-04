@@ -12,4 +12,7 @@ services:
       - ./config/:/config/
     networks: 
       - edge
+    profiles:
+      - kavita
+      - services
 

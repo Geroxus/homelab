@@ -8,3 +8,5 @@ services:
       - ./data/:/data/
     networks:
       - edge
+    profiles:
+      - base
